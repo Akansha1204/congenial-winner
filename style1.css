@@ -1,0 +1,70 @@
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            text-decoration: aqua;
+            color: chartreuse;
+        }
+        input, button {
+            padding: 5px;
+            margin: 5px;
+        }
+        button {
+            cursor: pointer;
+            padding: :10px 20px;
+            background-color: #4CAF50;
+            color: blue;
+            border: black;
+            border-radius:5px;
+        }
+        button:hover{
+            background-color: blueviolet;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            animation: pulse 1s infinite;
+        }
+        
+        button:hover {
+            animation: none; /* Stop the pulsating animation on hover */
+            background-color: #45a049;
+        }
+        @keyframes colorChange {
+            0% { color: black; }
+            50% { color: blue; }
+            100% { color: red; }
+        }
+        #result {
+            font-weight: bold;
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Simple Calculator</h2>
+    <input type="text" id="num1" placeholder="Enter first number">
+    <input type="text" id="num2" placeholder="Enter second number">
+    <button onclick="add()">Add</button>
+    <button onclick="subtract()">Subtract</button>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+    <p id="result"></p>
+    
+    <script>
+        // JavaScript functions here
+    </script>
+</body>
+</html>
+
